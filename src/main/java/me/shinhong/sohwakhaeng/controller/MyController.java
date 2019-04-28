@@ -17,5 +17,10 @@ public class MyController {
         return "login";
     }
 
+    @GetMapping("/popup")
+    public String popup(){
+        return "popup";
+    }
+
 
 }
