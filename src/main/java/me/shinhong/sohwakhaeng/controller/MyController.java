@@ -27,4 +27,9 @@ public class MyController {
         return "start";
     }
 
+    @GetMapping("/signup")
+    public String signup(){
+        return "signup";
+    }
+
 }
