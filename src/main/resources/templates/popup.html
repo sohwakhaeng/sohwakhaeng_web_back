@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <title>SHS | 퍼미션</title>
     <meta charset="utf-8" />
@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="/css/noscript.css" /></noscript>
 </head>
 
-<body> <!--  class="is-preload" -->
+<body>
    
         <!-- Main -->
         <div id="main" class="wrapper style">
@@ -18,7 +18,7 @@
                     <img src="/images/logo.png">
                     <p>시작하시려면 아래 버튼을 눌러주세요</p>
 
-                    <a href="start.html"><input type="button" value="시작하기" class="fit primary" style = "width: 75%;" /></a>
+                    <a th:href="@{'/start'}"><input type="button" value="시작하기" class="fit primary" style = "width: 75%;" /></a>
                 </header>
             </div>
         </div>

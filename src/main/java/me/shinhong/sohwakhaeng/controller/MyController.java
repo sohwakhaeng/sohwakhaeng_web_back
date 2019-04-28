@@ -22,5 +22,9 @@ public class MyController {
         return "popup";
     }
 
+    @GetMapping("/start")
+    public String start(){
+        return "start";
+    }
 
 }
