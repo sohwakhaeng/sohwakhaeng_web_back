@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 
-<html xmlns:th="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
-    <title>SHS | 로그인</title>
+    <title>SHS | 회원가입</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
-        <link rel="stylesheet" href="/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
 <body class="is-preload">
@@ -18,28 +18,30 @@
         <div id="main" class="wrapper style1">
             <div class="container">
                 <header class="major">
-                    <a th:href="@{'/'}"><img src="/images/logo.png"></a> <br><br>
-                    <p>번호로 간편하게 로그인하세요!</p>
+                    <a href="index.html"><img src="images/logo.png"></a> <br><br>
+                    <p>번호로 간편하게 회원가입하기</p>
+                    <p><sub>- 입력한 번호로 쿠폰 문자가 갑니다 -</sub></p>
                 </header>
 
                 <!-- Form -->
+                
                     <section  id="loginForm">
                         <form method="post" action="#"> 
                             <div class="row gtr-uniform gtr-50">
-                                <div class="col-6 col-12-xsmall">
+                                <div class="col-5">
                                     <input type="text" name="phone" id="phone" value="" placeholder="PhoneNumber" />
                                 </div>
 
                                 <div class="col-12">
                                     <ul class="actions">
-                                        <li><input type="submit" value="로그인" class="primary" /></li>
-                                        <li><a href="#"><input type="button" value="회원가입" /></a></li>
+                                        <li><input type="submit" value="회원가입" id="signup" class="primary" /></li>
                                     </ul>
                                 </div>
                             </div>
                         </form>
-                    </section>
+                    </section>     
             </div>
 
+</body>
 
 </html>
