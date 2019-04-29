@@ -11,11 +11,13 @@
         <tr>
             <th>Id</th>
             <th>Phone</th>
+            <th>Password</th>
             <th>delete</th>
         </tr>
         <tr th:each="person : ${users}">
             <td th:text="${user.id}"></td>
             <td th:text="${user.phone}"></td>
+            <td th:text="${user.password}"></td>
             <td><a href="/manager" th:href="@{'manager/delete/' + ${user.id}}">삭제</a></td>
         </tr>
     </table>

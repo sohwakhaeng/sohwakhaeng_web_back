@@ -20,4 +20,7 @@ public class User {
     @Column
     private int phone;
 
+    @Column
+    private String password;
+
 }
